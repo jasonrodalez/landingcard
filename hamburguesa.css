@@ -1,0 +1,231 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Arial', sans-serif;
+	box-sizing: border-box;
+}
+
+/*Variables de colores*/
+
+html:root{
+	--primario: linear-gradient(#DAAF2F, #F4C34A); /*Fondos de botones*/
+	--secundario: #190F10 ; /*Color de letras*/ 
+	--terciario: #261A12;  /*Color de bordes*/
+	--fondo: url(../img/fondo.png);
+	
+}
+
+#escritorio{
+	display: none;
+}
+
+/*Clases importantes*/
+/*Botones pedidos*/
+
+/*Botones recomendar*/
+
+/*
+1.- Body (Se coloca el fondo del diseño)
+2.- Main
+3.- Header (Logo)
+4.- Mapa: #mapa, #mapa-input, #mapa-label, 
+    #mapa-contenedor, iframe (google maps);
+5.- App main, #app, ul, li, #input-pagina-1, 
+	#label-pagina-1, #pagina-1; #input-pagina-2, 
+	#label-pagina-2, #pagina-2 ; #input-pagina-3, 
+	#label-pagina-3, #pagina-3.
+6.- Footer: ; section#botones-app
+
+
+Mapas de z-index:
+ Mapa contenedor: z-index:10;
+*/
+
+
+/*1.-Body*/
+body{
+	width: 100%;
+	height: 100vw;
+	background: var(--fondo);
+	background-size: cover;
+}
+
+/*2.-Main*/
+main{
+	max-width: 480px;
+	height: 100vw;
+
+}
+
+/*3.-Header(Logo)*/
+.center{
+	padding-top: 2vh; 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+header img{
+	width: 40%;
+	padding: 0 auto;
+	text-align: center;
+}
+
+/*4.-Mapa*/
+ /* #mapa, #mapa-input, span#localizar, span#cerrar #mapa-label, 
+ #mapa-contenedor, iframe, p*/
+
+ 
+ 
+
+
+#mapa-input{
+	display: none;
+}
+
+#mapa-label span#localizar{
+	position: absolute;
+	top: 0;
+	right: 3vw;
+	width: 15%;
+	height: 500px;
+	background: url(../img/localizar.png) no-repeat;
+	background-size:contain; 
+	/*z-index: 10;*/
+}
+
+#mapa-contenedor{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -200%;
+	transition: left .3s ease-in-out;
+	background: var(--fondo) no-repeat;
+	background-size: cover;
+	z-index: 1; 
+}
+
+
+#mapa #mapa-contenedor label span#close{
+	position: absolute;
+	top: 2vw;
+	right: 3vw;
+	width: 40px;
+	height: 35px;
+	background: url(../img/close.png) no-repeat;
+	background-size: cover;
+}
+
+p{
+	padding-top: 15vw;
+	text-align: center;
+	font-weight: bold;
+	font-size: 5vw;
+	color: #ffffff;
+}
+
+/*4.1.- Aplicación del mapa*/
+
+#mapa input#mapa-input:checked ~ div#mapa-contenedor{
+	left: 0;
+} 
+
+
+/*5.-App: main, #app, ul, li, #input-pagina-1, 
+	#label-pagina-1, #pagina-1*/
+#pagina-1, #pagina-2, #pagina-3{
+	display: none;
+}
+
+input#input-pagina-1:checked ~ #pagina-1{
+	display: block;
+}
+
+input#input-pagina-2:checked ~ #pagina-2{
+	display: block;
+}
+
+
+
+input#input-pagina-3:checked ~ #pagina-3{
+	display: block;
+}
+
+/*Borrar input de la app*/
+
+input#input-pagina-1, input#input-pagina-2, input#input-pagina-3{
+	display: none;
+}
+
+/*Hover de los botones*/
+
+input#input-pagina-1:checked + label#pagina-1{
+	width: 300px;
+	background: black;
+}
+
+
+
+
+
+
+/*7.- Footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 15vw;
+	background: rgba(0, 0, 0, .5);
+}
+
+#botones-app{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*#botones-app label{
+	width: 100%;
+	background: rgba(0, 0, 0, .2);
+
+}*/
+
+label#label-pagina-2:checked + boton-pedidos-2{
+	opacity: 1;
+}
+
+
+
+
+
+#botones-app label #boton-pedidos-1,
+#botones-app label #boton-pedidos-2,
+#botones-app label #boton-pedidos-3{
+	padding-top: 5px; 
+	text-align: center;
+	color: #fff;
+	opacity: 1;
+}
+
+/*#botones-app label #boton-pedidos-1:hover,
+#botones-app label #boton-pedidos-2:hover,
+#botones-app label #boton-pedidos-3:hover{
+	opacity: 1;
+}*/
+
+
+
+
+
+
+
+#botones-app label #boton-pedidos-1 img,
+#botones-app label #boton-pedidos-2 img,
+#botones-app label #boton-pedidos-3 img{
+	width: 25%;
+}

@@ -1,0 +1,286 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+body{
+	max-width: 480px;
+	height: 100vh;
+	/*background: url(../img/comida.png)  no-repeat center scroll;*/
+	background-size: cover;
+	
+}
+
+
+main{
+	max-width: 480px;
+	height: 100vh;
+}
+
+#fondo{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/*background: url(../img/fondo.png) no-repeat center scroll;*/
+	background-size: cover;
+	
+	
+}
+
+/*Localizar*/
+section#logo-mapa{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index:  100;
+}
+
+
+section#logo-mapa label span{
+	position: absolute;
+	top:0;
+	right: 1%;
+	width: 20%;
+	height: 30vw;
+	background: url(../img/localizar.png) no-repeat center;
+	background-size:cover; 
+	z-index: 10;
+	cursor: pointer;
+}
+
+section#logo-mapa #google-map{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo.png) no-repeat center scroll;
+	background-size: cover;
+	z-index: 20;
+	left: -200%;
+	transition: left .3s linear;
+}
+
+section#logo-mapa input:checked ~ #google-map{
+	left: 0;
+}
+
+/*Cerrar mapa*/
+
+
+
+#google-map div img{
+
+	position: absolute;
+	right: 0;
+}
+
+/*Fin de cerrar mapa*/
+ #google-map div label ~ h3{
+ 	padding-top: 20px;
+	text-align: center;
+	font-size: 6vw;
+	color: white;
+	line-height: 25px;
+	
+}
+
+iframe{
+	position: relative;
+	left: 50%;
+	
+	transform: translateX(-50%);
+
+	width: 80%;
+	height: 70vh;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 4px double white;
+}
+input{
+	display: none;
+}
+/*Logo*/
+
+#logo{
+	position: absolute;
+	left: 50%;
+	top: -13%;
+	transform: translateX(-50%);
+	width: 40%;
+	height: 50%;
+	background: url(../img/logo.png) no-repeat center;
+	background-size: contain;  
+	
+
+}
+
+
+/*Caja del contenido*/
+#producto{
+	position: relative;
+	top: 20%;
+	margin-top: auto;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/producto.png) no-repeat center scroll;
+	background-size: contain;
+	
+	
+
+}
+
+
+section{
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	
+	
+}
+
+
+
+section #descargar-menu a {
+	position: relative;
+	left: 8%;
+	top: 12%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: stretch;
+	font-size: 4.6vw;
+	text-align: center;
+	color:#291c13 ;
+}
+
+
+
+#descargar-menu{
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	width: 80%;
+	height: 190px;
+	background: url(../img/menu.png) no-repeat;
+	background-size:contain; 
+	color:#291c13 ;
+	
+
+}
+
+
+
+/*contacto*/
+section#contactos{
+	position: relative;
+	top: -8%;
+}
+
+#contacto{
+	padding: 10% 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	
+
+}
+
+#llamar{
+	width: 60%;
+	height: 220%;
+	background: url(../img/whatsapp.png) no-repeat;
+	background-size: cover;
+	
+
+}
+
+#whatsapp{
+	width: 60%;
+	height: 220%;
+	background: url(../img/llamar.png) no-repeat;
+	background-size: cover;
+
+}
+
+
+#redes-sociales {
+	padding: 0 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+h3{
+	position: relative;
+	top: 25%;
+	right: 5% ;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 20px;
+}
+/*Fin de contacto*/
+
+/*Fin de Caja del contenido*/
+
+/*Footer*/
+footer{
+	
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: #191512;
+}
+
+footer ul{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: space-around;
+	
+}
+
+footer ul li{
+	text-align: center;
+color: #f0eeef ;
+font-size: 3vw;
+}
+
+span img{
+width: 35%;
+margin-left: 50%;
+transform: translateX(-50%);
+}
+
+/*Inicio*/
+input#inicio:checked ~ section#fondo{
+	display: flex;
+}
+/*Fin de inicio*/
+
+/*Pedidos*/
+#pedidos-2{
+	width: 100%;
+	height: 100vh;
+}
+
+
+/*Fin de pedidos*/
+
+
+
+/*Recomendar*/
+input#recomendar{
+	position: absolute;
+	width: 300px;
+	background: black;
+	z-index: 500;
+}
+/*Fin de recomendar*/

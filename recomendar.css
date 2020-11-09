@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+/*Variables de colores*/
+
+#escritorio{
+	display: none;
+}
+
+
+
+
+/*1.-Pagina 3:
+/*2.- Slide*/
+	/*2.1 Input de portada*/
+/*3.- Botones label del slide
+  4.- Transicion del sllide*/
+/*5.- Botones recomendar
+ 	2.1 Boton recomendar a mis amigos	
+ 	2.2 Boton repartir tarjetas*/
+
+ /*1.-Pagina 3*/
+ #portada{
+ 	width: 80%;
+ 	height: 40vh;
+
+ }
+
+
+ /*2.-Slide*/
+ #portada ul li img{
+ 	position: absolute;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	top: 28vh;
+ 	width: 90%;
+ 	height: auto;
+ 	margin: 0 auto;
+ 	box-shadow: 0px 0 0 2px rgba(255, 255, 255, 0.5);
+ 	border-radius: 50px;
+ 	border: 1.5px solid #261A12;
+ 	text-align: center;
+ }
+  /*2.1.- Input de portada*/
+ section#portada ul li input{
+	display: none;
+}
+
+ /*3.- Botones del slide*/
+
+/*section#portada ul li label{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	float: left;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}*/
+
+
+
+/*4.- Transición del slide*/
+/*Efecto*/@keyframes slider{
+
+0%{
+
+	opacity: 1;
+
+}
+
+20%{
+	opacity: 1;
+}
+
+
+30%{
+
+	opacity: 0;
+}
+
+90%{
+	opacity: 0;
+
+}
+
+100%{
+	opacity: 1;
+
+}
+
+}
+
+/*Fin efecto*/
+
+#portada ul li img#img-slide-1{
+	transition: slider 12s linear 12s infinite;
+}
+
+#portada ul li img#img-slide-2{
+	transition: slider 12s linear 8s infinite;
+}
+
+#portada ul li img#img-slide-3{
+	transition: slider 12s linear 4s infinite;
+}
+
+
+
+
+/*5.-Botones recomendar*/
+ 	#botones-recomendar{
+ 		position: relative;
+ 		top: -10vh;
+ 		display: flex;
+ 		flex-flow: column nowrap;
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+
+ 	#botones-recomendar a:first-of-type button,
+ 	#botones-recomendar a:nth-of-type(2) button, 
+ 	#botones-recomendar a:last-of-type button
+ 	{
+
+ 		width: 60vw;
+ 		height: 10vh;
+ 		margin-top: 8px;
+ 		background: var(--primario);
+ 		box-shadow: 0px 0 0 2px rgba(255, 255, 255, 0.5), 2px 8px 5px #68311b;
+ 		border-radius: 50px;
+ 		border: 1.7px solid var(--terciario);
+
+ 	}
+
+ 	#botones-recomendar  a button  {
+
+ 		font-weight: bold;
+ 		font-size: 5vw;
+ 		color: var(--secundario);
+
+
+ 	}

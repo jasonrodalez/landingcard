@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LandingCard Hamburguesa</title>
+	<meta name="keywords" content="LandingCard, ventas, marketing, portafolio">
+	<meta name="description" content="Hamburguesas para llevar en Lima">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="text/css" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" media="(min-width: 480px)" href="css/escritorio.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="css/hamburguesa.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="css/inicio.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="css/recomendar.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="css/pedidos.css">
+
+</head>
+<body>
+
+	<!-- Escritorio -->
+	<section id="escritorio">
+		<div class="column" >
+			<!-- <img src="img/modelo-1.png" id="modelo-1"> -->
+			<img src="img/modelo-1.png" id="modelo-1">
+			<img src="img/modelo-2.png" id="modelo-2">
+			<img src="img/modelo-4.png" id="modelo-3">
+		</div>
+
+		<div class="column">
+			<h1><em>Digi</em>Card</h1>
+			<h2>Tarjetas digitales</h2>
+			<p>Visible solo en <br> teléfonos celulares</p>
+			<h2> <em>¡Solicítala ya!</em> <br> 928 951 828</h2>
+			
+		</div>
+
+
+		
+	</section>
+	<!-- Fin de escritorio -->
+	
+	<main>
+
+		<!-- logo -->
+	<header class="center" >
+		<img src="img/logo.png">
+	</header>
+	<!-- Fin de logo -->
+
+	<!-- Mapa -->
+	<section id="mapa">
+
+		<input type="checkbox" id="mapa-input">
+		<label for="mapa-input" id="mapa-label"><span id="localizar"></span></label>
+		<div id="mapa-contenedor">
+			<label for="mapa-input"> <span id="close"></span></label>
+			<p>Ubícanos en la siguiente dirección: Av. San Martín de Porres Lima</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998896.3295390481!2d-77.47128533129762!3d-12.047732740103386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c14ef2451449%3A0xebafdb7822adaa19!2sMunicipalidad%20Metropolitana%20de%20Lima!5e0!3m2!1ses!2spe!4v1604622170639!5m2!1ses!2spe" width="80%" height="450" frameborder="0" style="border:3;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			
+		</div>
+		
+	</section>
+	<!-- Fin de mapa -->
+
+	<!-- Contenido de la aplicación -->
+
+
+		<div id="app">
+			
+			<ul>
+		<li>
+					<input type="radio" name="in" id="input-pagina-1">
+					<label for="input-pagina-1" id="label-pagina-1"></label>
+
+					<!-- Pagina uno Pedidos-->
+
+		 <div id="pagina-1"> <!-- Empieza Pagina 1 -->
+						
+				<!-- <section id="titulo">
+				<p>Elige entre más de 100 plantillas listas para usar</p>
+				</section> -->
+
+
+				<!-- Producto 1 -->
+			<section   id="pedir">	
+				<input type="checkbox" id="producto-1">
+				<label for="producto-1"></label>
+				<figure class="centrar-img" id="figure-producto-1">
+					<img src="img/logo.png" width="40%">
+					<label for="producto-1"> <span id="close-1"></span></label>
+					<img  src="img/sencilla.png">
+					<figcaption class="titulo-producto"> <b>Hamburguesa Sencilla</b> <br> Con queso, jamón, de carne o de 
+					pollo + cremas.<br> <em>Precio: S/. 5</em> </figcaption>
+					<a href="https://api.whatsapp.com/send?phone=51928951828&text=Mensaje%20de%20prueba:%20Hola,%20deseo%20una:%20Hamburguesa%20Chedar%20de%20S/.%205%20y%20%C2%BFMe%20puedes%20activar%20una%20tarjeta%20digital?"><button class="botones">Pedir por Whasapp</button></a>
+				</figure>
+
+				<!-- Producto 2 -->
+				<input type="checkbox" id="producto-2">
+				<label for="producto-2"></label>
+				<figure class="centrar-img" id="figure-producto-2">
+					<img src="img/logo.png" width="40%">
+					<label for="producto-2"> <span id="close-2"></span></label>
+					<img src="img/chedar.png">
+					<figcaption class="titulo-producto"> 
+						<b>Hamburguesa Chedar</b> <br> Con queso, jamón, de carne o de 
+					pollo + cremas.<br> <em>Precio: S/. 5</em> 
+					</figcaption>
+					<a href="https://api.whatsapp.com/send?phone=51928951828&text=Mensaje%20de%20prueba:%20Hola,%20deseo%20una:%20Hamburguesa%20Chedar%20de%20S/.%205%20y%20%C2%BFMe%20puedes%20activar%20una%20tarjeta%20digital?"><button class="botones">Pedir por whatsapp</button></a>
+				</figure>
+
+				<!-- Producto 3 -->
+				<input type="checkbox" id="producto-3">
+				<label for="producto-3"></label>
+				<figure class="centrar-img" id="figure-producto-3" >
+					<img src="img/logo.png" width="40%">
+					<label for="producto-3"> <span id="close-3"></span></label>
+					<img src="img/bacon.png">
+					<figcaption class="titulo-producto"> <b>Hamburguesa Bacon</b> <br> Con queso, jamón, de carne o de 
+					pollo + cremas.<br> <em>Precio: S/. 5</em> </figcaption>
+					<a href="https://api.whatsapp.com/send?phone=51928951828&text=Mensaje%20de%20prueba:%20Hola,%20deseo%20una:%20Hamburguesa%20Chedar%20de%20S/.%207%20y%20%C2%BFMe%20puedes%20activar%20una%20tarjeta%20digital?"><button class="botones">Pedir por Whatsapp</button></a>
+				</figure>
+
+				<!-- Producto 4 -->
+				<input type="checkbox" id="producto-4">
+				<label for="producto-4"></label>
+				<figure class="centrar-img" id="figure-producto-4" >
+					<img src="img/logo.png" width="40%">
+					<label for="producto-4"> <span id="close-4"></span></label>
+					<img src="img/doble.png">
+					<figcaption class="titulo-producto"> <b>Hamburguesa Doble</b> <br> Con queso, jamón, de carne o de 
+					pollo + cremas.<br> <em>Precio: S/. 5</em> </figcaption>
+					<a href="https://api.whatsapp.com/send?phone=51928951828&text=Mensaje%20de%20prueba:%20Hola,%20deseo%20una:%20Hamburguesa%20Chedar%20de%20S/.%208%20y%20%C2%BFMe%20puedes%20activar%20una%20tarjeta%20digital?"><button class="botones">Pedir por Whatsapp</button></a>
+				</figure>
+		</section>
+
+				
+						
+
+			<section class="row">
+
+				<div class="column">
+					
+						<div>
+							<img src="img/sencilla.png" width="100%">
+							<label for="producto-1"><h3 class="botones" >Ver</h3></label>
+							
+						</div> 
+						
+					 
+
+					 
+						<div>
+							<img src="img/chedar.png" width="100%">
+							<label for="producto-2"><h3 class="botones" >Ver</h3></label>
+							
+						</div> 
+						
+					 
+
+					
+				</div>
+
+				<div class="column">
+
+					
+						<div>
+							<img src="img/bacon.png" width="100%">
+							<label for="producto-3"><h3  class="botones" >Ver</h3></label>
+							
+						</div> 
+						
+					
+
+					 
+						<div>
+							<img src="img/doble.png" width="100%">
+							<label for="producto-4"><h3 class="botones">Ver</h3></label>
+							
+						</div> 
+						
+					 
+					
+				</div>
+		 	</section>
+
+
+		</div> <!-- Finaliza Pagina 1 -->
+				</li>  <!-- Li de finalizar Pagina 1 -->
+
+				<li>
+					<input type="radio" name="in" checked="checked" id="input-pagina-2">
+					<label for="input-pagina-2" id="label-pagina-2">
+						
+
+					</label>
+
+					<!-- Pagina Dos Inicio -->
+					<div id="pagina-2">
+
+						<section id="producto"></section>
+						<section id="descargar-menu" class="centrar-contactos">
+							<a href="img/menu-precios.png" download="Nuestra Carta de precios" >
+								<img src="img/menu.png"><p>Descargar menú</p>
+							</a>
+						</section>
+						<section id="contacto" class="centrar-contactos" >
+							<a href="https://api.whatsapp.com/send?phone=51928951828&text=Quiero%20una%20Tarjeta%20Digital.%20%C2%BFPodemos%20empezar?"><img src="img/whatsapp.png"><p>Whatsapp</p></a>
+							<a href="tel: +51928951828"><img src="img/llamar.png"><p>Llamar</p></a>
+						</section>
+
+						<section id="redes-sociales" class="centrar-contactos" >
+							<a href="https://www.youtube.com/watch?v=4GM6dLQsHAQ"><img src="img/web.png"></a>
+							<a href="https://www.youtube.com/watch?v=4GM6dLQsHAQ"><img src="img/email.png"></a>
+							<a href="https://www.youtube.com/watch?v=4GM6dLQsHAQ"><img src="img/facebook.png"></a>
+							<a href="https://www.youtube.com/watch?v=4GM6dLQsHAQ"><img src="img/instagram.png"></a>
+						</section>
+						
+					</div>
+				</li>
+
+				<li>
+					<input type="radio" name="in" id="input-pagina-3">
+					<label for="input-pagina-3" id="label-pagina-3"></label>
+
+
+
+					<!-- Pagina tres Recomendar-->
+					<div id="pagina-3">
+						<section id="portada">
+							<ul>
+								<li>
+									<input type="checkbox"  id="portada-1">
+									<label for="portada-1"><span></span></label>
+									<img src="img/portada-1.png" id="img-slide-1">
+								</li>
+
+								<li>
+									<input type="checkbox"  id="portada-2">
+									<label for="portada-2"><span></span></label>
+									<img src="img/portada-2.png" id="img-slide-2">
+								</li>
+
+								<li>
+									<input type="checkbox"  id="portada-3">
+									<label for="portada-3"><span></span></label>
+									<img src="img/portada-3.png" id="img-slide-3">
+								</li>
+							</ul>
+						</section>
+
+						<section id="botones-recomendar">
+
+							<a href="whatsapp://send?text=Hola,%20te%20recomiendo%20Burguer,%20te%20paso%20su%20tarjeta%20digital.%20Allí%20verás%20sus%20productos%20y%20precios.%20Este%20es%20el%20enlace%20👉%20">
+							<button>Recomendar Burguer a mis amigos</button>
+							</a>
+
+							
+							<a href="whatsapp://send?text=Hola,%20te%20comparto%20mi%20tarjeta%20digital%20para%20que%20eches%20un%20vistazo.%20Puedes%20tambíen%20recomendarme.%20Este%20es%20el%20enlace%20👉%20
+">
+							<button>Repartir tarjetas</button>
+							</a>
+
+							
+							<a href="https://api.whatsapp.com/send?phone=51928951828&text=Hola,%20deseo%20una%20tarjeta%20digital.%20%C2%BFPodr%C3%ADas%20activarme%20una?">
+							<button>Solicitar una tarjeta</button>
+							</a>
+							
+
+						</section>
+
+					</div>
+				</li>
+
+
+
+			</ul>
+
+		</div>
+
+		
+	</main>
+
+	<!-- Fin de Contenido de la aplicación -->
+
+	<!-- Botones de la App -->
+
+	<footer>
+		<section id="botones-app">
+
+			
+			<label for="input-pagina-1">
+			<figure id="boton-pedidos-1">
+				<img src="img/pedidos.png">
+				<figcaption>Pedidos</figcaption>
+			</figure> 
+			</label>
+
+			
+			<label for="input-pagina-2" id="label-pagina-2">
+			<figure id="boton-pedidos-2">
+				<img src="img/inicio.png">
+				<figcaption>Inicio</figcaption>
+			</figure> 
+			</label>
+
+			<label for="input-pagina-3"> 
+			<figure id="boton-pedidos-3">
+				<img src="img/recomendar.png">
+				<figcaption>Recomendar</figcaption>
+			</figure> 
+			</label>
+			
+		</section>
+		
+	</footer>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.0.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

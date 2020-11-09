@@ -1,0 +1,385 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Arial', sans-serif;
+	box-sizing: border-box;
+}
+
+main{
+	max-width: 480px;
+	height: 100vh;
+	background: lightgrey  ; 
+}
+
+/*Seccion de logo y mapa*/
+section#logo-mapa{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index:  1;
+}
+
+
+section#logo-mapa label span{
+	position: absolute;
+	top:0;
+	right: 1%;
+	width: 20%;
+	height: 30vw;
+	background: url(../img/localizar.png) no-repeat center;
+	background-size:cover; 
+	
+	
+}
+
+/*La caja del iframe del mapa*/
+
+section#logo-mapa #google-map{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo.png) no-repeat center scroll;
+	background-size: cover;
+	z-index:10;
+	left: -200%;
+	transition: left .3s linear;
+}
+
+/*La caja del iframe del mapa*/
+
+/*Aplicacion del mapa*/
+
+section#logo-mapa input:checked ~ #google-map{
+	left: 0;
+}
+
+/*Cerrar mapa*/
+
+
+
+#google-map div img{
+
+	position: absolute;
+	right: 0;
+}
+
+/*Fin de cerrar mapa*/
+ #google-map div label ~ h3{
+ 	padding-top: 20px;
+	text-align: center;
+	font-size: 6vw;
+	color: white;
+	line-height: 25px;
+	
+}
+
+iframe{
+	position: relative;
+	left: 50%;
+	
+	transform: translateX(-50%);
+	z-index: 4000;
+	width: 80%;
+	height: 70vh;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 4px double white;
+}
+
+input{
+	display: none;
+}
+/*Logo*/
+
+#logo{
+	position: absolute;
+	left: 50%;
+	top: -13%;
+	transform: translateX(-50%);
+	width: 40%;
+	height: 50%;
+	background: url(../img/logo.png) no-repeat center;
+	background-size: contain;  
+	z-index: 100;
+
+	
+
+}
+
+/*Fin de seccion de logo y mapa*/
+
+
+/*Cajon de contenido*/
+
+div#botonera{
+	position: relative;
+	margin: auto;
+	
+}
+
+
+
+/*Label*/
+
+
+div ul li label#bloque-1, div ul li label#bloque-2, div ul li label#bloque-3 {
+	width: 100%;
+	height: 16vw;
+	padding-top: 5px; 
+	position: relative;
+	top: 91vh;
+	width: 33.33%;
+	z-index: 5;
+	float: left;
+	font-size: 4vw;
+	text-align: center;
+	background: rgba(0, 0, 0, .5);
+	
+	opacity: .7;
+	/*border-left:  0.1px solid rgba(255, 255, 255, .5);*/
+	box-sizing: border-box;
+	/*border-radius: 50%;*/
+}
+
+
+
+
+div ul li input:checked + label#bloque-1,
+ div ul li input:checked + label#bloque-2,
+  div ul li input:checked + label#bloque-3{
+	opacity: 1;
+	color: white;
+
+}
+
+
+
+/*Efecto*/
+
+div ul li input:checked ~ div#inicio {
+	display: block;
+	
+	
+}
+
+div ul li input:checked ~ div#pedidos {
+	display: block;
+	
+	
+}
+
+div ul li input:checked ~ div#recomendar {
+	display: block;
+	
+	
+}
+
+/*Input*/
+
+div#botonera ul li input{
+	display: none;
+
+}
+
+
+
+
+/*Inicio*/
+#inicio{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	display: none;
+	transition: all .4s linear;
+}
+
+#fondo{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo.png) no-repeat center scroll;
+	background-size: cover;
+	
+	
+}
+#producto{
+	position: relative;
+	top: 20%;
+	margin-top: auto;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/producto.png) no-repeat center scroll;
+	background-size: contain;
+	
+	
+
+}
+
+
+/*Caja del contenido*/
+#producto{
+	position: relative;
+	top: 20%;
+	margin-top: auto;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/producto.png) no-repeat center scroll;
+	background-size: contain;
+	
+	
+
+}
+
+
+section{
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	
+	
+}
+
+
+
+section #descargar-menu a {
+	position: relative;
+	left: 8%;
+	top: 12%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: stretch;
+	font-size: 4.6vw;
+	text-align: center;
+	color:#291c13 ;
+}
+
+
+
+#descargar-menu{
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	width: 80%;
+	height: 190px;
+	background: url(../img/menu.png) no-repeat;
+	background-size:contain; 
+	color:#291c13 ;
+	
+
+}
+
+
+
+/*contacto*/
+section#contactos{
+	position: relative;
+	top: -8%;
+}
+
+#contacto{
+	padding: 10% 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	
+
+}
+
+#llamar{
+	width: 60%;
+	height: 220%;
+	background: url(../img/whatsapp.png) no-repeat;
+	background-size: cover;
+	
+
+}
+
+#whatsapp{
+	width: 60%;
+	height: 220%;
+	background: url(../img/llamar.png) no-repeat;
+	background-size: cover;
+
+}
+
+
+#redes-sociales {
+	padding: 0 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+h3{
+	position: relative;
+	top: 25%;
+	right: 5% ;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 20px;
+}
+/*Fin de contacto*/
+
+/*Fin de Caja del contenido*/
+
+/*Fin de inicio*/
+
+
+/*Pedidos*/
+#pedidos{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	
+	background: url(../img/fondo.png) no-repeat;
+	background-size: contain;
+	left: 0%;
+	display: none;
+	transition: left .4s linear;
+
+}
+
+#pedidos-producto-1, #pedidos-producto-2,
+#pedidos-producto-3, #pedidos-producto-4 {
+	position: relative;
+	display: none;
+}
+
+
+
+
+/*Imagenes de productos-label*/
+
+ul#cajon-botonera li label span{
+	
+	width: 600px;
+	height: 300px;
+	background: url(../img/secilla.png) no-repeat;
+	background-size: cover;
+
+} 
+
+/*Fin de imagenes de productos label*/
+
+ figcaption{
+	color: white;
+	text-align: center;
+}
+
+/*Recomendar*/
+#recomendar{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/producto.png) rgba(0, 0, 0, .2) no-repeat;
+	background-size: contain; 
+	left: 0;
+	display: none;
+	transition: left .4s linear;
+}
+

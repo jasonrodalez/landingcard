@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Arial', sans-serif;
+	box-sizing: border-box;
+}
+
+html:root{
+	--primario: linear-gradient(#DAAF2F, #F4C34A); /*Fondos de botones*/
+	--secundario: #190F10 ; /*Color de letras*/ 
+	--terciario: #261A12;  /*Color de bordes*/
+	--fondo: url(../img/fondo.png);
+	
+}
+
+main, footer{
+	display: none;
+}
+
+body{
+	max-width: 100%;
+	height: 100vh;
+	background: rgb(240,242,245);
+}
+
+
+/*Id Escritorio*/
+#escritorio{
+	display: relative;
+	max-width: 70%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 10px;
+	background:url(../img/escritorio-bg.png);
+	background-size: cover;
+
+}
+
+.column{
+
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4px;
+}
+
+.column h1, .column h2, .column p{
+	position: relative;
+	z-index: 10;
+	text-align: right;
+	text-shadow: 10px 2px 4px rgb(255, 255, 255), 
+	10px 2px 10px #f0a321;
+
+	padding-right: 8vw;
+}  
+
+/*Letras*/
+
+.column h1{
+	font-size: 6vw;
+	color: #f0a321;
+	text-shadow: 2px 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+
+.column h2{
+   font-size: 3vw;
+   color: #f02148;
+   text-shadow: 2px 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+
+.column p{
+    font-size: 2vw;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 1);
+}
+
+
+/*Img phone*/
+
+.column img#phone{
+	width: 140%;
+	vertical-align: middle;
+	z-index: 
+}
+
+/*Transición de modelos*/
+
+
+
+.column #modelo-1, .column #modelo-2, .column #modelo-3 {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translateY(-50%);
+	
+	width: 20%;
+	vertical-align: middle;
+	border-radius: 20px;
+	z-index: 1;
+	  
+}
+
+.column #modelo-1{
+	animation: modelos 12s linear 12s infinite;
+	-webkit-animation: modelos 12s linear 12s  infinite;
+	-moz-animation: modelos 12s linear 12s  infinite;
+}
+
+.column #modelo-2{
+	animation: modelos 12s linear 8s infinite;
+	-webkit-animation: modelos 12s  linear 8s infinite;
+	-moz-animation: modelos 12s linear 8s  infinite;
+}
+
+.column #modelo-3{
+	animation: modelos 12s linear 4s infinite;
+	-webkit-animation: modelos 12s  linear 4s infinite;
+	-moz-animation: modelos 12s linear 4s  infinite;
+}
+
+
+/*Transicion*/
+
+@keyframes modelos{
+0%{
+	opacity: 1;
+}
+
+20%{
+	opacity: 1;
+}
+
+30%{
+	opacity: 0;
+}
+
+90%{
+	opacity: 0;
+}
+
+100%{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+}
+
+/*Column*/

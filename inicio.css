@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+/*Variables de colores*/
+
+:root{
+	--primario: ; /*Fondos de botones*/
+	--secundario: ; /*Color de letras*/ 
+	--terciario: ;  /*Color de bordes*/
+	--fondo: url(../img/fongo.png) ;
+	
+}
+
+#escritorio{
+	display: none;
+}
+
+
+
+/*1.-Pagina 1: #pagina-1, #producto,*/
+/*2.- Página 2: #pagina2, #producto;
+	 #descargar-menu, #contacto, #redes-sociales */
+/*3.-Página 3*/
+
+/*1.- Página 2: Inicio*/
+
+#pagina-2{
+	position: relative;
+	bottom: 3vh;
+	width: 100%;
+	height: 50vh;
+	/*background: black;*/
+}
+
+#producto{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/producto.png) no-repeat;
+	background-size: contain;
+
+}
+
+
+div#pagina-2 section:nth-of-type(2){
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	
+}
+
+
+#descargar-menu a img {
+    width: 75%;
+    position: relative;
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: 10vh;
+}
+#descargar-menu a p {
+	width: 100%;
+	height: 20vw;
+	position: absolute;
+	bottom: 4vh;
+	padding-left: 4vw;
+	font-size: 6vw;
+    text-align: center;
+    color: #271b12;
+}
+
+
+#contacto{
+position: relative;
+	bottom: 10vh;
+	padding: 0 50px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#contacto img{
+width: 100%;
+}
+#contacto p{
+	position:relative;
+	top: -14.5vh;
+	color: #271b12;
+	padding-right: 6vw;
+	font-size: 5vw;
+}
+
+
+
+#redes-sociales{
+	position: relative;
+	bottom: 21vh;
+	padding: 0 50px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#redes-sociales  img{
+	width: 110%;
+	}
+
+

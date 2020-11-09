@@ -1,0 +1,223 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+
+/*Variables de colores*/
+
+:root{
+	--primario: ; /*Fondos de botones*/
+	--secundario: ; /*Color de letras*/ 
+	--terciario: ;  /*Color de bordes*/
+	--fondo: url(../img/fongo.png) ;
+}
+
+#escritorio{
+	display: none;
+}
+
+/*1.- Pedidos: #pagina-1, #portafolio-productos,
+	titulos del producto;
+  2.- Producto 1
+  3.- Producto 2
+  4.- Producto 3
+  5.- Producto 4
+  6.- Aplicacion de ver productos
+*/
+
+/*1.- Pedidos*/
+
+#pagina-1{
+	width: 100%
+	height: 100vh;
+	/*background: black;*/
+
+}
+
+
+#portafolio-productos{
+	width: 90%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-flow: row  wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: center;
+	margin: 80px auto;
+}
+
+/*Pedir*/
+
+.centrar-img {
+	width: 50%;
+	height: 100%;
+	padding: 0 20px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+
+}
+
+#figure-producto-1 img, 
+#figure-producto-2 img, 
+#figure-producto-3 img,
+
+#figure-producto-4 img{
+	-webkit-filter: drop-shadow: 2px 2px 2px black;
+	margin: 0 auto;
+    position: relative;
+    top: -35px;
+}
+
+
+
+.titulo-producto{
+	position: relative;
+    top: -25px;
+    font-weight: bold;
+ 	font-size: 5.5vw;
+ 	color: #261A12;
+}
+
+#figure-producto-2{
+
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: left .3s linear;
+
+}
+
+#figure-producto-1, #figure-producto-2,
+#figure-producto-3,#figure-producto-4{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: -200%;
+	transition: left .3s linear;
+}
+
+section#pedir input{
+	display: none;
+}
+
+/*Caja de galeria de imagenes de Ver productos*/
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 30px;
+}
+
+.column{
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4px;
+}
+
+.column label div img{
+	width: 100%;
+	vertical-align: middle;
+	box-shadow: 10px 10px 4px black;
+	
+}
+
+
+
+
+
+
+/*1.1.- Titulo del producto*/
+
+ figure figcaption{
+	
+	text-align: center;
+}
+
+/*1.2.- Boton de todos productos Ver y Pedir*/
+
+.botones{
+		
+		width: 100%;
+ 		height: 5vh;
+ 		margin: 10px auto;
+ 		background: linear-gradient(#DAAF2F, #F4C34A);
+ 		box-shadow: 0px 0 0 1px rgba(255, 255, 255, 0.5), 2px 5px 3px #68311b;
+ 		border-radius: 50px;
+ 		border: 1.5px solid var(--terciario);
+ 		font-weight: bold;
+ 		font-size: 5vw;
+ 		color: var(--secundario);
+
+}
+
+/*Título en boton ver*/
+
+.column div label h3{
+	text-align: center;
+	padding-top: 4px;
+}
+
+
+/*Aplicación de ver productos*/
+
+input#producto-1:checked ~ figure#figure-producto-1{
+	left: 0;
+}
+
+input#producto-2:checked ~ figure#figure-producto-2{
+	left: 0;
+}
+
+input#producto-3:checked ~ figure#figure-producto-3{
+	left: 0;
+}
+
+input#producto-4:checked ~ figure#figure-producto-4{
+	left: 0;
+}
+
+
+/*Boton cerrar de producto*/
+
+#pedir figure#figure-producto-1 label span#close-1, 
+#pedir figure#figure-producto-2 label span#close-2,
+#pedir figure#figure-producto-3 label span#close-3,
+#pedir figure#figure-producto-4 label span#close-4
+
+{
+	position: absolute;
+	top: 2vw;
+	right: 3vw;
+	width: 40px;
+	height: 35px;
+	background: url(../img/close.png) no-repeat;
+	background-size: cover;
+}
+
+
+{
+	position: absolute;
+	top: 2vw;
+	right: 3vw;
+	width: 40px;
+	height: 35px;
+	background: url(../img/close.png) no-repeat;
+	background-size: cover;
+}
+
+
+
+
